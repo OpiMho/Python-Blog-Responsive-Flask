@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author.username }}</a>
+              <small class="text-muted">{{ post.date_posted.strftime('%Y-%d-%m') }}</small>
+            </div>
+            <h2>{{ post.title }}</h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+
+{% for comment in comments %}
+      <article class="media content-section">
+
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ comment.user_id }}</a>
+              <small class="text-muted">{{ comment.date_posted.strftime('%Y-%d-%m') }}</small>
+            </div>
+            <p class="article-content">{{ comment.comment   }}</p>
+          </div>
+
+        </article>
+{% endfor %}
+{% if current_user.is_authenticated %}
+<article  class="media content-section">
+          <div id="contestar" class="media-body">
+            <div class="article-metadata">
+
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <div class="form-group">
+                {{ form.comment.label(class="form-control-label") }}
+                {% if form.comment.errors %}
+                    {{ form.comment(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.comment.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.comment(class="form-control form-control-lg") }}
+                {% endif %}
+            </div>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info") }}
+        </div>
+    </form>
+          </div>
+        </article>
+{% else %}
+<div class="alert alert-danger">
+Para comentar tenes que estar <a href="/login">Logueado.</a> Sino tenes cuenta, podes Registrarte, <a  href="/registrarme">aqui</a>.
+
+</div>{% endif %}
+{% endblock content %}
