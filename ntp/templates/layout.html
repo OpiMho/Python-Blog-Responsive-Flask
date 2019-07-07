@@ -45,15 +45,18 @@
         </div>
       </nav>
     </header>
+
     <main role="main" class="container">
-      <div class="row">
+
+        <div class="row">
         <div class="col-md-8">
             {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
               {% for category, message in messages %}
                 <div class="alert alert-{{ category }}">
-                  {{ message }}
+                    {{ message }}
                 </div>
+
               {% endfor %}
             {% endif %}
             {% endwith %}
@@ -61,7 +64,7 @@
         </div>
         <div class="col-md-4">
           <div class="content-section">
-            <h3>NTP Beta Life</h3>
+            <h3>NTP Alpha Life</h3>
               <p class='text-muted'>  <b>2013-2019</b>,
               <ul class="list-group">
                 <li class="list-group-item list-group-item-light">Ultimos Post ( Pronto )</li>

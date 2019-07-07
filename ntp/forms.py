@@ -66,3 +66,7 @@ class PostForm(FlaskForm):
 class CommentForm(FlaskForm):
     comment = TextAreaField('Respuesta', validators=[DataRequired()])
     submit = SubmitField("Contestar")
+
+class ChatForm(FlaskForm):
+    comment = TextAreaField('Mensaje', validators=[DataRequired()])
+    mandar = SubmitField("Manadar")

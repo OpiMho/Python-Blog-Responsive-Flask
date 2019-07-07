@@ -1,6 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
+ <article class="media content-section">
+      <div class="form-group">
+             {{ form.comment(class="form-control input-sm") }}
+
+
+            {{ form.mandar(class="btn btn-outline-info") }}
+        </div>
+        </article>
     {% for post in posts %}
+
         <article class="media content-section">
           <div class="media-body">
             <div class="article-metadata">

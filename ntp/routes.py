@@ -1,15 +1,14 @@
 from flask import  render_template, url_for, flash, redirect, request, render_template_string
 from ntp.models import User, Post, Comments
-from ntp.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm, CommentForm
+from ntp.forms import RegistrationForm, LoginForm, UpdateAccountForm, PostForm, CommentForm, ChatForm
 from ntp import app, db, bcrypt
 from flask_login import login_user, current_user, logout_user, login_required
-from datetime import datetime
-
 
 @app.route("/")
 def root():
+    form=ChatForm()
     posts= Post.query.all()
-    return render_template("home.html", posts=posts)
+    return render_template("home.html", posts=posts, form=form)
 
 @app.route('/acerca')
 def acerca():
