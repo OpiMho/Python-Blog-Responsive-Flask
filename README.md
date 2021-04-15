@@ -1,8 +1,9 @@
+
 ## Blog in Python with Flask & Mongo [RESPONSIVE]
 
 ![](https://cdn.apkgoogle.org/storage/2020/09/Python-3-Tutorials-Learn-Python-Tutorials-Full-Ad-Free-MoD-APK-3.3.png)
 
- ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) 
+ ![](https://img.shields.io/badge/Version-1.25-black) ![](https://img.shields.io/badge/Powered%20by-Kazu-pink) 
 
 
 **Date: 2019 by OpiMho | Python 3.6 | Flask 1.0.3 **
@@ -52,3 +53,11 @@ id = db.Column(db.Integer, primary_key=True)<br>
 <p align="center" width="100%">
     <img width="50%" src="https://i.imgur.com/OgbNOoM.png"> 
 </p>
+
+
+
+
+
+
+
+
