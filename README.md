@@ -1,18 +1,19 @@
 
 ## Blog in Python with Flask & Mongo [RESPONSIVE]
 
+### Jugando cree un blog en flask, rapido y sencillo. 
+
 ![](https://cdn.apkgoogle.org/storage/2020/09/Python-3-Tutorials-Learn-Python-Tutorials-Full-Ad-Free-MoD-APK-3.3.png)
 
  ![](https://img.shields.io/badge/Version-1.25-black) ![](https://img.shields.io/badge/Powered%20by-Kazu-pink) 
 
 
-**Date: 2019 by OpiMho | Python 3.6 | Flask 1.0.3 **
+**Date: 2019 | Python 3.6 | Flask 1.0.3 **
 `$ pip3 -r requirements.txt`
 
 ----
-## TD;LR
 
-#### [Ver-Live-En-Heroku](https://ntpaz.herokuapp.com)
+
 
 ![Responsive](https://i.imgur.com/f5J45dj.png)
 <br>
