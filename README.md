@@ -5,7 +5,7 @@
 
 ![](https://cdn.apkgoogle.org/storage/2020/09/Python-3-Tutorials-Learn-Python-Tutorials-Full-Ad-Free-MoD-APK-3.3.png)
 
- ![](https://img.shields.io/badge/Version-1.25-black) ![](https://img.shields.io/badge/Powered%20by-Kazu-pink) 
+ ![](https://img.shields.io/badge/Version-1.25-black) 
 
 
 **Date: 2019 | Python 3.6 | Flask 1.0.3 **
