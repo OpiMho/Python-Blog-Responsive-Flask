@@ -51,12 +51,6 @@ id = db.Column(db.Integer, primary_key=True)<br>
 ```
 
 
-<p align="center" width="100%">
-    <img width="50%" src="https://i.imgur.com/OgbNOoM.png"> 
-</p>
-
-
-
 
 
 
